@@ -1,5 +1,3 @@
-# Django settings for eventex project.
-
 import os
 PROJECT_DIR = os.path.dirname(__file__)
 
@@ -22,6 +20,8 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+DEFAULT_FROM_EMAIL = 'contato@eventex.com'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -94,8 +94,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'core',
+	'subscription',
 )
