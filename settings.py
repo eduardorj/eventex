@@ -100,4 +100,5 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'core',
 	'subscription',
+	'south',
 )
